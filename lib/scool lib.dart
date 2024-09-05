@@ -1995,3 +1995,91 @@ child: Column(
     );
   }
 }
+
+
+
+///// new
+
+child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 40.h,
+                          height: 68.h,
+                          child: Image.asset(
+                            Images.all_book,
+                            fit: BoxFit.cover,
+                            filterQuality: FilterQuality.high,
+                          ),
+                        ),
+                        SizedBox(width: 5.h),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Book Name', style: TextStyle(color: ColorResources.BLACK, fontSize: Dimensions.FONT_SIZE_18, fontWeight: FontWeight.bold),),
+                            SizedBox(height: 10.h,),
+                            Text('Book Writer Name', style: TextStyle(color: ColorResources.blueColor, fontSize: Dimensions.FONT_SIZE_15, fontWeight: FontWeight.bold),),
+                            SizedBox(height: 10.h,),
+                            Text('Available', style: TextStyle(color: ColorResources.yelloColor),),
+                          ],
+                        ),
+                        SizedBox(width: Dimensions.RADIUS_SMALL),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 40.h,
+                          height: 68.h,
+                          child: Image.asset(
+                            Images.all_book,
+                            fit: BoxFit.cover,
+                            filterQuality: FilterQuality.high,
+                          ),
+                        ),
+                        SizedBox(width: 5.h),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Book Name', style: TextStyle(color: ColorResources.BLACK, fontSize: Dimensions.FONT_SIZE_18, fontWeight: FontWeight.bold),),
+                            SizedBox(height: 10.h,),
+                            Text('Book Writer Name', style: TextStyle(color: ColorResources.blueColor, fontSize: Dimensions.FONT_SIZE_15, fontWeight: FontWeight.bold),),
+                            SizedBox(height: 10.h,),
+                            Text('Available', style: TextStyle(color: ColorResources.yelloColor),),
+                          ],
+                        ),
+                        SizedBox(width: Dimensions.RADIUS_SMALL),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
