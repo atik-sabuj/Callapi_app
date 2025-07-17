@@ -2706,7 +2706,45 @@ child: Column(
 }
 
 
-
+   builder: (BuildContext context) {
+        return Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              // Categories Dropdown
+              DropdownButtonFormField<String>(
+                decoration: InputDecoration(
+                  labelText: 'Categories',
+                  contentPadding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  filled: true,
+                  fillColor: Colors.white,
+                ),
+                value: dropdownValue2,
+                hint: Text(
+                  'Select Category',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 12,
+                  ),
+                ),
+                icon: const Icon(Icons.keyboard_arrow_down),
+                items: <String>['Story', 'Poem', 'Subject Books']
+                    .map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                }).toList(),
+                onChanged: (String newValue) {
+                  setState(() {
+                    dropdownValue2 = newValue;
+                  });
+                },
+              ),
 
 
 ///// new
